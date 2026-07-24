@@ -14,6 +14,7 @@ The API is converted to an MCP server, and exposed to the ReAct agent as a tool.
 
 This repository provides an in-memory, self-contained demonstration of building an MCP server and driving an MCP client session entirely within Python (`mcp_example.ipynb`).
 
+```text
 --- Examples showing that the tool is only called when necessary ---
 
 Query: Winner of the 2026 Scripps National Spelling Bee?
