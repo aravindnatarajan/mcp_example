@@ -32,7 +32,7 @@ Tools Called: []
 ----------------------------------------
 
 Query: In which city was the first match of the 2026 Fifa world cup played?
-Answer: The first match of the 2026 FIFA World Cup was played in **Mexico City** at the Estadio Azteca.
+Answer: The first match of the 2026 FIFA World Cup was played in Mexico City at the Estadio Azteca.
 Tools Called: ['fetch_web_knowledge']
 ----------------------------------------
 
