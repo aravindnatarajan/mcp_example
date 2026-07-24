@@ -42,3 +42,29 @@ Instead of running separate server and client processes over STDIO or WebSockets
   │  └────────────────────────────────────────────────────┘        │
   └─────────────────────────────────────────────────────────────┘
 
+
+--- Initiating Class-Based Agent Evaluation Loop ---
+
+Query: Winner of the 2026 Scripps National Spelling Bee?
+Answer: Shrey Parikh won the 2026 Scripps National Spelling Bee.
+Tools Called: ['fetch_web_knowledge']
+----------------------------------------
+
+Query: Distance from the earth to the moon
+Answer: The average distance from the Earth to the Moon is approximately 238,855 miles (384,400 kilometers).
+Tools Called: []
+----------------------------------------
+
+Query: When is Taylor Swift's birthday?
+Answer: Taylor Swift was born on December 13, 1989.
+Tools Called: []
+----------------------------------------
+
+Query: In which city was the first match of the 2026 Fifa world cup played?
+Answer: The first match of the 2026 FIFA World Cup was played in **Mexico City** at the Estadio Azteca.
+Tools Called: ['fetch_web_knowledge']
+----------------------------------------
+
+Query: Describe the carbon cycle
+Answer: The carbon cycle is a biogeochemical process where carbon atoms circulate between the atmosphere, biosphere, hydrosphere, and geosphere. Plants and algae sequester carbon dioxide from the air through photosynthesis, while respiration by animals and microbes releases it back into the environment. Decomposition of organic matter further contributes to atmospheric carbon levels, while oceans act as significant reservoirs by absorbing dissolved gases. Finally, geological processes such as volcanic eruptions and fossil fuel combustion facilitate the long-term storage and release of carbon over millions of years.
+Tools Called: []
