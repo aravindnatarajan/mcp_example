@@ -14,35 +14,6 @@ The API is converted to an MCP server, and exposed to the ReAct agent as a tool.
 
 This repository provides an in-memory, self-contained demonstration of building an MCP server and driving an MCP client session entirely within Python (`mcp_example.ipynb`).
 
----
-
-## 🛠️ How MCP is Implemented in This Repo
-
-Instead of running separate server and client processes over STDIO or WebSockets, this repository uses **`FastMCP`** and the `fastmcp.Client` context manager to instantiate and interact with an MCP server **in-process**.
-
-### Architecture Overview
-
-```text
-  ┌─────────────────────────────────────────────────────────────┐
-  │                 mcp_example.ipynb                           │
-  │                                                             │
-  │  ┌──────────────────────┐      in-memory async connection   │
-  │  │  FastMCP Server      │ <──────────────────────────────┐  │
-  │  │  ("Math & Utility")  │                                │  │
-  │  └──────────┬───────────┘                                │  │
-  │             │                                            │  │
-  │             ├── @mcp.tool() ──> add_numbers()            │  │
-  │             ├── @mcp.tool() ──> calculate_bmi()          │  │
-  │             └── @mcp.resource() ──> config://app-settings│  │
-  │                                                          │  │
-  │  ┌────────────────────────────────────────────────────┐  │  │
-  │  │ Client(mcp) Async Context Manager                  │ ─┴──┘  │
-  │  │  • Discover: await client.list_tools()            │        │
-  │  │  • Execute:  await client.call_tool(...)           │        │
-  │  └────────────────────────────────────────────────────┘        │
-  └─────────────────────────────────────────────────────────────┘
-
-
 --- Examples showing that the tool is only called when necessary ---
 
 Query: Winner of the 2026 Scripps National Spelling Bee?
