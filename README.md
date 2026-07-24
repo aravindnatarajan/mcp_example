@@ -43,7 +43,7 @@ Instead of running separate server and client processes over STDIO or WebSockets
   └─────────────────────────────────────────────────────────────┘
 
 
---- Examples showing that the tool is only called when necessary  ---
+--- Examples showing that the tool is only called when necessary ---
 
 Query: Winner of the 2026 Scripps National Spelling Bee?
 Answer: Shrey Parikh won the 2026 Scripps National Spelling Bee.
